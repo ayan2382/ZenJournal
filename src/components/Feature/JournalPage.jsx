@@ -12,6 +12,7 @@ export default function JournalPage() {
   const handleAdd = (title, content) => {
     dispatch(addEntry(title, content));
   };
+  
 
   const handleUpdate = (id, title, content) => {
     dispatch(updateEntry({ id, title, content }));

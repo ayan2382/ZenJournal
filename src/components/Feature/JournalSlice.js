@@ -38,5 +38,7 @@ const journalSlice = createSlice({
   }
 });
 
+
+
 export const { addEntry, updateEntry, deleteEntry } = journalSlice.actions;
 export default journalSlice.reducer;
