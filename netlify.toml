@@ -1,0 +1,11 @@
+# Proxy API requests to your Vercel backend
+[[redirects]]
+  from = "/api/*"
+  to = "https://zenjournalbe.vercel.app/:splat"
+  status = 200
+
+# SPA fallback so React Router works on refresh
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
